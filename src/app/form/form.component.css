@@ -39,7 +39,10 @@ textarea {
     color: rgba(255,255,255, 0.5);
     text-wrap: wrap;
 }
-
+input[type="date"]:before {
+    content: attr(placeholder);
+    color: rgba(255,255,255, 0.5);
+  }
 .button {
     color: white;
     margin-top: 10px;
