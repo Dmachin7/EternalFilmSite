@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0 auto;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* section {
+    scroll-snap-align: start;
+    scroll-margin: 100px;
+}
+
+@media screen and (max-width: 450px) {
+    section {
+        scroll-margin: 0;
+    }
+} */
+
+body {
+    background-color: black;
+}

@@ -1,0 +1,26 @@
+<div class="container" [ngClass]="blur">
+    <form ngNativeValidate [formGroup]="form" class="container" (submit)="send()">
+    <div class="inner-container">
+        <input type="text" formControlName="full_name" placeholder="Full Name" required>
+    </div>
+    <div class="inner-container">
+        <input type="text" formControlName="email" placeholder="Email Address" required>
+    </div>
+    <div class="inner-container">
+        <input type="text" formControlName="date" placeholder="Date for session" required>
+    </div>
+    <div class="inner-container">
+        <textarea placeholder="Tell me more about your vision and what you are wanting to get captured !" formControlName="more_info" required></textarea>
+    </div>
+    <div class="button-container">
+        <button  class="button" type="submit">Submit</button>
+    </div>
+    </form>
+</div>
+
+<div class="alert" [ngClass]="active">
+    <div class="inner-text">
+    <h2>Thank you for your Inquiry!</h2>
+    <p>Please allow me 24-48 hours to reach out with more information!</p>
+    </div>
+</div>

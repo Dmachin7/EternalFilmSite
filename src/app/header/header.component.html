@@ -1,0 +1,21 @@
+<div class="container" [ngClass]="{'scrolled': isScrolled}">
+    <div (click)="showMobileNav()" class="mobile" [ngClass]="display">
+        <span class="bar"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+    </div>
+    <ul (click)="showMobileNav()" [ngClass]="show">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+            <a href="#contact">Inquire</a>
+        </li>
+    </ul>
+</div>
